@@ -13,6 +13,7 @@ def index():
 
     if name:
         cursor.execute(
+          learning-codeql
            "SELECT * FROM books WHERE name LIKE '%" + name + "%'"
         books = [Book(*row) for row in cursor]
 
